@@ -1,0 +1,757 @@
+/* Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* 
+
+FONT-FAMILY : text (poppins) ,Headings (Playfair Display);
+
+Background-Color :;
+
+Company Name color : #cf6b00;
+
+Sub Heading color : #5c3000;
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+html {
+  font-size: 12px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fae4cc;
+  letter-spacing: 0.0187rem;
+  font-family: "poppins";
+  position: relative;
+}
+
+/* HEADER SECTION */
+
+.header {
+  color: #231200;
+  background-color: #e77e0d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+}
+
+.cafe-name {
+  font-size: 1.875rem;
+  text-align: center;
+  font-family: "playfair display";
+}
+
+.cafe-name a:link,
+.cafe-name a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navBtn {
+  font-size: 1.875rem;
+  text-align: center;
+}
+
+.close-btn {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  height: 70px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.sticky .hero-section {
+  margin-top: 120px;
+}
+
+/* .sticky section {
+  margin-top: 120px;
+} */
+
+/* SHOW NAVIGATION */
+
+body.toggle {
+  overflow-y: hidden;
+}
+
+.toggle .close-btn {
+  display: block;
+  z-index: 999;
+  position: relative;
+}
+.toggle .open-btn {
+  display: none;
+}
+
+.toggle nav {
+  display: block;
+  position: absolute;
+  top: 0.625rem;
+  font-size: 1.125rem;
+  right: 0rem;
+  height: 100vh;
+  z-index: 99;
+  background-color: #e77e0d;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+}
+
+/* .toggle .header {
+  z-index: 9999;
+} */
+
+.toggle .nav-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.nav-ul li:hover {
+  padding-bottom: 0.125rem;
+  border-bottom: 0.125rem solid #231200;
+  width: fit-content;
+  transition: all 0.2s;
+}
+
+nav li a:link,
+nav li a:visited {
+  text-decoration: none;
+  color: #231200;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  background-image:
+    linear-gradient(rgb(35, 18, 0, 0.7), rgb(35, 18, 0, 0.7)),
+    url(./images/Hero\ section\ img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6rem 0.75rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+.subheading {
+  margin-bottom: 3rem;
+}
+
+.menuVisit-div {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.menu-button {
+  background-color: #fae4cc;
+  color: #231200;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 0.125rem;
+  font-weight: bolder;
+}
+
+.visit-button {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background-color: #cf6b00;
+  color: #fdf1e6;
+  border-radius: 0.125rem;
+  font-weight: bolder;
+}
+
+.menu-button a:link,
+.menu-button a:visited,
+.visit-button a:link,
+.visit-button a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  margin-bottom: 4rem;
+  padding: 0 0.75rem;
+}
+
+/* FEATURES SECTION */
+.section-title {
+  text-align: center;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: #231200;
+}
+h2 span {
+  color: #cf6b00;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.feature {
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  background-color: #e77e0d;
+  color: #231200;
+  padding: 0.5rem;
+  border-radius: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.featureItem-heading {
+  font-weight: bolder;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ABOUT US SECTION */
+.about-section {
+  padding: 2rem 1rem;
+  background-color: #673600;
+  color: #fae4cc;
+  margin-bottom: 4rem;
+}
+
+.about-highlight {
+  text-align: center;
+  color: #231200;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-bottom: 0.125rem solid #673600;
+  padding-bottom: 0.75rem;
+}
+
+/* EXPERIENCE SECTION */
+
+.experience-section {
+  margin-bottom: 4rem;
+}
+
+.experience-imgMobile {
+  margin-bottom: 1.5rem;
+}
+
+/* SIGNATURE SECTION */
+
+.Signature-section h2 {
+  margin-bottom: 3rem;
+}
+
+.Signature-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.SignatureItem-heading {
+  font-size: 1.25rem;
+  color: #673600;
+  font-weight: bolder;
+  border-bottom: 0.0625rem solid #673600;
+  padding-bottom: 0.25rem;
+  width: fit-content;
+}
+
+.SignatureItem-img {
+  height: 15.625rem;
+  border-radius: 0.3125rem;
+  margin: 0.75rem 0;
+}
+
+.SignatureItem-text {
+  font-style: italic;
+}
+
+.Signature-section .menu-button {
+  background-color: #231200;
+  color: #fae4cc;
+  border-radius: 0.3125rem;
+}
+
+/* TESTIMONY SECTION */
+
+.testimonial-div {
+  margin-bottom: 4rem;
+}
+
+.testimonies-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.testimony {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonial-img {
+  width: 6.25rem;
+  border-radius: 100%;
+}
+
+.testimony-author {
+  font-weight: bolder;
+}
+
+/* VISIT US SECTION */
+
+.visit-div {
+  border-top: 0.125rem solid #673600;
+  border-bottom: 0.125rem solid #673600;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.location-div,
+.openDays-Div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.location-icon,
+.time-icon {
+  color: #673600;
+}
+
+.btn-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-btn {
+  background-color: #673600;
+  color: #fdf1e6;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 12;
+  margin-bottom: 1.5rem;
+}
+
+.location-btn:hover {
+  cursor: pointer;
+}
+
+.visit-highlight {
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+/*  NEWSLETTER */
+
+.newsletter-div {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-subheading {
+  margin-bottom: 1rem;
+}
+
+.newsletter-subheading span {
+  color: #673600;
+  font-weight: bolder;
+}
+
+.subscribe-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 1.5rem 0.75rem 1.5rem;
+  background-color: #e77e0d;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+}
+
+.email-icon {
+  font-size: 1.25rem;
+  background-color: #fae4cc;
+  padding: 0.25rem 0.375rem;
+  border-radius: 100%;
+}
+
+.input-email {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.input-email::placeholder {
+  color: #fae4cc;
+  background: none;
+  outline: none;
+}
+
+.Subscribe-btn {
+  background: #673600;
+  padding: 0.5rem 2rem;
+  border-radius: 1.5rem;
+  border: none;
+  color: #fae4cc;
+}
+
+.Subscribe-btn:hover {
+  cursor: pointer;
+}
+
+.newsletter-img {
+  display: none;
+}
+
+/* FOOTER */
+.footer-firstDiv {
+  background-color: #231200;
+  color: #fae4cc;
+  padding: 2rem 0.5rem;
+}
+
+footer h2 {
+  color: #fae4cc;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.cafe-description {
+  margin-bottom: 3rem;
+}
+
+.socials-div {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.social a:link,
+.social a:visited {
+  color: #fae4cc;
+  font-size: 2rem;
+}
+
+.social a:active,
+.social a:hover {
+  color: #cf6b00;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.nav-item a:link,
+.nav-item a:visited,
+.contact p a:link,
+.contact p a:visited {
+  text-decoration: none;
+  color: #fae4cc;
+}
+
+.nav-item a:active,
+.nav-item a:hover,
+.contact p a:active,
+.contact p a:hover {
+  color: #cf6b00;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+}
+
+.contact:hover {
+  color: #cf6b00;
+}
+
+.footer-secondDiv {
+  text-align: center;
+  background-color: #231200;
+  border-top: 0.0625rem solid #cf6b00;
+  color: #fae4cc;
+  padding: 2rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.terms:link,
+.terms:visited {
+  color: #fae4cc;
+  text-decoration: none;
+}
+
+.terms:active,
+.terms:hover {
+  color: #cf6b00;
+  border-bottom: 0.0625rem solid #cf6b00;
+  padding-bottom: 0.25rem;
+  transition: all 0.1s;
+}
+
+@media (min-width: 37.5em) {
+  html {
+    font-size: 13px;
+  }
+
+  .experience-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #e77e0d;
+    padding: 1rem;
+  }
+
+  .experience-imgMobile {
+    margin: 0;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .Signature-div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 48em) {
+  nav {
+    display: block;
+  }
+
+  .nav-ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0 0.75rem;
+  }
+
+  .closeOpen-div {
+    display: none;
+  }
+
+  .hero-section {
+    padding: 6rem 1.5rem;
+  }
+
+  .hero-sectionDiv {
+    max-width: 43.75rem;
+    text-align: start;
+    padding: 2rem 3rem;
+  }
+
+  .menuVisit-div {
+    justify-content: start;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .experienceAbout-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .experience-div {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonies-div {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .newsletter-section {
+    background-image:
+      linear-gradient(rgb(245, 225, 204, 0.4), rgb(245, 225, 204, 0.4)),
+      url(./images/newsletter\ img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 6rem 0;
+  }
+
+  .newsletter-width {
+    max-width: 43.75rem;
+    margin: 0 auto;
+  }
+
+  .newsletter-width span {
+    color: #3e2000;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .nav-ul {
+    font-size: 1.125rem;
+  }
+
+  .experience-div {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .experience-imgMobile {
+    margin: 0;
+  }
+
+  .Signature-div {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .footer-firstDiv {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1fr 1.7fr;
+    padding: 5rem 1.5rem;
+  }
+
+  footer h2 {
+    margin-bottom: 2rem;
+    text-align: start;
+  }
+
+  h3 {
+    margin-bottom: 2rem;
+  }
+
+  .cafeName-div {
+    grid-column: 1/3;
+  }
+
+  .socials-div {
+    gap: 1.5rem;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+
+  .contact-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 75em) {
+  html {
+    font-size: 16px;
+  }
+
+  .hero-section {
+    padding: 8rem 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 90em) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 137.5em) {
+  html {
+    font-size: 30px;
+  }
+}
+
+/* Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
