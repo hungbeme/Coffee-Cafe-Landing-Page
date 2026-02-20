@@ -483,17 +483,18 @@ h2 span {
   padding: 3rem 1rem;
   z-index: 10;
   flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
-  width: fit-content;
+  width: 100%;
   margin: 4rem auto;
 }
 
 h2.devHead {
-  font-size: 1.125rem;
+  font-size: 20px;
 }
 
 .dev-tab p {
-  font-size: 0.875rem;
+  font-size: 16px;
   margin-bottom: 0.75rem;
 }
 
@@ -511,10 +512,13 @@ h2.devHead {
 .devBtn {
   background-color: #cf6b00;
   border: none;
-  padding: 0.5rem;
+  padding: 12px 24px;
   font-weight: bolder;
   margin-top: 2rem;
-  font-size: larger;
+  font-size: 18px;
+  border-radius: 0.25rem;
+  width: fit-content;
+  text-align: center;
 }
 
 .overlay {
@@ -787,7 +791,7 @@ h3 {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75em) {
   html {
     font-size: 15px;
   }
@@ -803,7 +807,7 @@ h3 {
 
 @media (min-width: 90em) {
   html {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 
