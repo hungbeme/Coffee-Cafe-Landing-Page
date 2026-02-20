@@ -514,6 +514,7 @@ h2.devHead {
   padding: 0.5rem;
   font-weight: bolder;
   margin-top: 2rem;
+  font-size: larger;
 }
 
 .overlay {
@@ -808,7 +809,7 @@ h3 {
 
 @media (min-width: 137.5rem) {
   html {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
