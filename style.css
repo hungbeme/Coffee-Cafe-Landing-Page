@@ -28,7 +28,7 @@ img {
 }
 
 html {
-  font-size: 12px;
+  font-size: 14px;
   scroll-behavior: smooth;
 }
 
@@ -83,17 +83,14 @@ nav {
   bottom: 0;
   z-index: 99;
   height: 70px;
-  padding-bottom: 0;
-  padding-top: 0;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  box-shadow: 0 1rem 3.2rem rgba(0, 0, 0, 0.09);
 }
 
 .sticky .hero-section {
-  margin-top: 120px;
+  margin-top: 80px;
 }
-
-/* .sticky section {
-  margin-top: 120px;
-} */
 
 /* SHOW NAVIGATION */
 
@@ -123,15 +120,13 @@ body.toggle {
   padding: 0.5rem 0.75rem;
 }
 
-/* .toggle .header {
-  z-index: 9999;
-} */
-
 .toggle .nav-ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
+  font-size: 1.125rem;
+  margin-top: 1.5rem;
 }
 .nav-ul li:hover {
   padding-bottom: 0.125rem;
@@ -187,6 +182,7 @@ button:hover {
   border: none;
   border-radius: 0.125rem;
   font-weight: bolder;
+  font-size: 1rem;
 }
 
 .visit-button {
@@ -196,6 +192,7 @@ button:hover {
   color: #fdf1e6;
   border-radius: 0.125rem;
   font-weight: bolder;
+  font-size: 1rem;
 }
 
 .menu-button a:link,
@@ -390,6 +387,7 @@ h2 span {
   border-radius: 0.25rem;
   padding: 12;
   margin-bottom: 1.5rem;
+  font-size: 1rem;
 }
 
 .location-btn:hover {
@@ -440,12 +438,14 @@ h2 span {
   border: none;
   outline: none;
   width: 100%;
+  padding-top: 0.3125rem;
 }
 
 .input-email::placeholder {
   color: #fae4cc;
   background: none;
   outline: none;
+  font-size: 0.625rem;
 }
 
 .Subscribe-btn {
@@ -454,6 +454,7 @@ h2 span {
   border-radius: 1.5rem;
   border: none;
   color: #fae4cc;
+  font-size: 1rem;
 }
 
 .Subscribe-btn:hover {
@@ -462,6 +463,68 @@ h2 span {
 
 .newsletter-img {
   display: none;
+}
+
+/* SHOW DEVELOPER TAB+ */
+.hidden.dev-tab,
+.hidden.overlay {
+  display: none;
+}
+
+.dev-tab {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  background-color: #fdf1e6;
+  color: #3e2000;
+  text-align: center;
+  padding: 3rem 1rem;
+  z-index: 10;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: fit-content;
+  margin: 4rem auto;
+}
+
+h2.devHead {
+  font-size: 1.125rem;
+}
+
+.dev-tab p {
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.dev-icons:link,
+.dev-icons:visited {
+  font-size: 1.875rem;
+  text-decoration: none;
+  color: #cf6b00;
+}
+
+.devBtn:hover {
+  cursor: pointer;
+}
+
+.devBtn {
+  background-color: #cf6b00;
+  border: none;
+  padding: 0.5rem;
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 5;
 }
 
 /* FOOTER */
@@ -570,9 +633,9 @@ h3 {
   transition: all 0.1s;
 }
 
-@media (min-width: 37.5em) {
+@media (min-width: 37.5rem) {
   html {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .experience-div {
@@ -596,7 +659,7 @@ h3 {
   }
 }
 
-@media (min-width: 48em) {
+@media (min-width: 48rem) {
   nav {
     display: block;
   }
@@ -668,7 +731,7 @@ h3 {
   }
 }
 
-@media (min-width: 56.25em) {
+@media (min-width: 56.25rem) {
   .nav-ul {
     font-size: 1.125rem;
   }
@@ -723,9 +786,9 @@ h3 {
   }
 }
 
-@media (min-width: 75em) {
+@media (min-width: 1200px) {
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .hero-section {
@@ -739,11 +802,11 @@ h3 {
 
 @media (min-width: 90em) {
   html {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
-@media (min-width: 137.5em) {
+@media (min-width: 137.5rem) {
   html {
     font-size: 30px;
   }

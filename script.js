@@ -10,10 +10,9 @@ const openCloseBtn = document
 const links = document.querySelectorAll("a:link");
 links.forEach((link) => {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
-
     const href = link.getAttribute("href");
     if (href === "#") {
+      e.preventDefault();
       window.scrollTo({
         top: 0,
         behavior: "smooth",
@@ -50,3 +49,21 @@ const obs = new IntersectionObserver(
 );
 
 obs.observe(sectionEl);
+
+// ADDING A RESPONSE TO BUTTONS
+const devBtns = document.querySelectorAll(".dev-display");
+const devTab = document.querySelector(".dev-tab");
+const closeDevTab = document.querySelector(".devBtn");
+const overlayEl = document.querySelector(".overlay");
+
+devBtns.forEach((devlink) => {
+  devlink.addEventListener("click", function (e) {
+    devTab.classList.remove("hidden");
+    overlayEl.classList.remove("hidden");
+  });
+});
+
+closeDevTab.addEventListener("click", function () {
+  devTab.classList.add("hidden");
+  overlayEl.classList.add("hidden");
+});
