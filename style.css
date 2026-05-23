@@ -28,7 +28,7 @@ img {
 }
 
 html {
-  font-size: 14px;
+  font-size: 15px;
   scroll-behavior: smooth;
 }
 
@@ -47,7 +47,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 1.5rem;
+  padding: 0.75rem 1.5rem;
 }
 
 .cafe-name {
@@ -82,14 +82,14 @@ nav {
   top: 0;
   bottom: 0;
   z-index: 99;
-  height: 70px;
+  height: 4.375rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
   box-shadow: 0 1rem 3.2rem rgba(0, 0, 0, 0.09);
 }
 
 .sticky .hero-section {
-  margin-top: 80px;
+  margin-top: 5rem;
 }
 
 /* SHOW NAVIGATION */
@@ -145,8 +145,8 @@ nav li a:visited {
 
 .hero-section {
   background-image:
-    linear-gradient(rgb(35, 18, 0, 0.7), rgb(35, 18, 0, 0.7)),
-    url(./images/Hero\ section\ img.jpg);
+    linear-gradient(rgb(35, 18, 0, 0.7), rgb(35, 18, 0, 0.4)),
+    url(./images/coffee\ hero-img.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -157,11 +157,11 @@ nav li a:visited {
 }
 
 h1 {
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem 0;
 }
 
 .subheading {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .menuVisit-div {
@@ -169,6 +169,7 @@ h1 {
   gap: 1.5rem;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
 }
 
 button:hover {
@@ -490,11 +491,11 @@ h2 span {
 }
 
 h2.devHead {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .dev-tab p {
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 0.75rem;
 }
 
@@ -512,10 +513,10 @@ h2.devHead {
 .devBtn {
   background-color: #cf6b00;
   border: none;
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   font-weight: bolder;
   margin-top: 2rem;
-  font-size: 18px;
+  font-size: 1.125rem;
   border-radius: 0.25rem;
   width: fit-content;
   text-align: center;
@@ -528,7 +529,7 @@ h2.devHead {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(0.25rem);
   z-index: 5;
 }
 
@@ -536,17 +537,16 @@ h2.devHead {
 .footer-firstDiv {
   background-color: #231200;
   color: #fae4cc;
-  padding: 2rem 0.5rem;
+  padding: 3rem 0.5rem;
 }
 
 footer h2 {
   color: #fae4cc;
-  margin-bottom: 0.5rem;
-  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .cafe-description {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .socials-div {
@@ -554,7 +554,7 @@ footer h2 {
   list-style: none;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .social a:link,
@@ -578,7 +578,7 @@ h3 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .nav-item a:link,
@@ -600,7 +600,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact-icon {
@@ -624,6 +624,10 @@ h3 {
   justify-content: center;
 }
 
+.footer-secondDiv p {
+  opacity: 0.5;
+}
+
 .terms:link,
 .terms:visited {
   color: #fae4cc;
@@ -638,7 +642,7 @@ h3 {
   transition: all 0.1s;
 }
 
-@media (min-width: 37.5rem) {
+@media (min-width: 37.5em) {
   html {
     font-size: 15px;
   }
@@ -664,7 +668,7 @@ h3 {
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   nav {
     display: block;
   }
@@ -719,7 +723,7 @@ h3 {
   .newsletter-section {
     background-image:
       linear-gradient(rgb(245, 225, 204, 0.4), rgb(245, 225, 204, 0.4)),
-      url(./images/newsletter\ img.jpg);
+      url(./images/coffe\ newletterImg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -736,7 +740,7 @@ h3 {
   }
 }
 
-@media (min-width: 56.25rem) {
+@media (min-width: 56.25em) {
   .nav-ul {
     font-size: 1.125rem;
   }
@@ -811,9 +815,9 @@ h3 {
   }
 }
 
-@media (min-width: 137.5rem) {
+@media (min-width: 137.5em) {
   html {
-    font-size: 20px;
+    font-size: 27px;
   }
 }
 
